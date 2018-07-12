@@ -144,3 +144,5 @@ RUN apt-get update && \
     libasound2 \
     xvfb"
 
+echo "# Install yarn
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash"
