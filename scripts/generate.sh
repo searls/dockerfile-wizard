@@ -144,5 +144,8 @@ RUN apt-get update && \
     libasound2 \
     xvfb"
 
+echo "# Install bundler
+RUN gem install bundler"
+
 echo "# Install yarn
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash"
