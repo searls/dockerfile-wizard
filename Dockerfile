@@ -13,8 +13,9 @@ RUN apt-get install -y libssl-dev \
   && make install \
   && ruby -v
 
-# postgres client
+# database clients
 RUN apt-get -y install postgresql-client
+RUN apt-get -y install mysql-client
 
 # other utilities from CircleCI's base images
 RUN perl -MCPAN -e 'install TAP::Parser'
